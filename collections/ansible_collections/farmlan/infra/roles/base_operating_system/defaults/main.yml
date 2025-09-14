@@ -3,6 +3,7 @@
 # base_operating_system_
 # these should be set in the hosts_vars
 # this has been completed #6
+# test
 base_operating_system_hostname:
 base_operating_system_domain:
 base_operating_system_fqdn: "{{ base_operating_system_hostname }}.{{ base_operating_system_domain }}"
