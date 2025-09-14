@@ -1,0 +1,4 @@
+- name: Include hostname.yml task file
+  when: ansible_facts['fqdn'] != base_operating_system_fqdn
+  ansible.builtin.include_tasks:
+    file: hostname.yml

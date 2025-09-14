@@ -1,0 +1,7 @@
+# hostname.yml variables
+# all variables must start with the following to pass ansible-lint
+# base_operating_system_
+# these should be set in the hosts_vars
+base_operating_system_hostname:
+base_operating_system_domain:
+base_operating_system_fqdn: "{{ base_operating_system_hostname }}.{{ base_operating_system_domain }}"
