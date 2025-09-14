@@ -1,0 +1,6 @@
+---
+- name: Configure bare_metal host
+  hosts: localhost
+  become: true
+  roles:
+    - farmlan.infra.base_operating_system

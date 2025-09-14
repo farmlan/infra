@@ -10,6 +10,8 @@ collections/ansible_collections/*
 !collections/ansible_collections/farmlan
 collections/ansible_collections/farmlan/*
 !collections/ansible_collections/farmlan/infra
+.vscode/*
+!.vscode/extensions.json
 # https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore
 # Byte-compiled / optimized / DLL files
 __pycache__/
