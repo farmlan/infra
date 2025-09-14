@@ -1,5 +1,5 @@
-!secrets/.keep
 secrets/*
+!secrets/.keep
 .logs/*
 *.retry
 *.vault
