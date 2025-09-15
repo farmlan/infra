@@ -7,3 +7,18 @@
 base_operating_system_hostname:
 base_operating_system_domain:
 base_operating_system_fqdn: "{{ base_operating_system_hostname }}.{{ base_operating_system_domain }}"
+# end of hostname.yml variables
+
+# networking.yml variables
+# all variables must start with the following to pass ansible-lint
+# base_operating_system_
+# these should be set in the hosts_vars
+base_operating_system_networking:
+  - conn_name: ""
+    ifname: "{{ ansible_facts['ansible_default_ipv4']['interface'] }}"
+    type: "ethernet"
+    method4:
+    ip4:
+    gw4:
+    dns4:
+    method6:

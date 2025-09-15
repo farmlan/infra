@@ -1,0 +1,15 @@
+---
+- name: Ensure networking is configured
+  when: base_operating_system_networking is defined
+  notify: Restart NetworkManager
+  loop: "{{ base_operating_system_networking }}"
+  community.general.nmcli:
+    state: present
+    conn_name: "{{ item.conn_name }}"
+    ifname: "{{ item.ifname }}"
+    type: "{{ item.type }}"
+    method4: "{{ item.method4 | default(static) }}"
+    ip4: "{{ item.ip4 | default(omit) }}"
+    gw4: "{{ item.gw4 | default(omit) }}"
+    dns4: "{{ item.dns4 | default(omit) }}"
+    method6: "{{ item.method6 | default(disabled) }}"
