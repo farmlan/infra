@@ -69,7 +69,7 @@ tox==4.30.2
 tox-ansible==25.8.0
 typing_extensions==4.15.0
 tzdata==2025.2
-virtualenv==20.34.0
+virtualenv==20.36.1
 wcmatch==10.1
 yamllint==1.37.1
 zipp==3.23.0
